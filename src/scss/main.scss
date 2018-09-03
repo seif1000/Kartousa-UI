@@ -1,0 +1,116 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Arimo|Quicksand');
+body{
+    font-family: 'Arimo', sans-serif !important;
+    font-family: 'Quicksand', sans-serif !important;  
+}
+
+.navbar{
+    background: #fff;
+    
+    .nav-link{
+        font-size: 18px;
+        color: black;
+      
+        
+    }
+   
+}
+#showcase{
+    min-height: 500px;
+    padding-top: 100px;
+    background-image: url('../img/seif.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#media{
+    .fab{
+        font-size: 22px;
+        color: gray;
+        cursor: pointer;
+    }
+    .col-md-6{
+        border-bottom: 1px solid gray;
+    }
+}
+#courses{
+    .card{
+        max-width: 300px;
+       
+    }
+    .img{
+        display: block;
+        width: 100%;
+  
+    }
+}
+#us{
+    background: linear-gradient(to right,#00aaff,#80d4ff,#b3e6ff);
+    .fa{
+         font-size: 35px;
+         color: white;
+    }
+}
+#start{
+    position: relative;
+    min-height: 300px;
+    background-image: url('../img/team-386673_640.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 200;
+    .btn{
+        background: white;
+        color: black;
+    }
+    .count{
+     
+        font-size: 40px;
+        color: white;
+    }
+    .off{
+        font-size: 20px;
+
+    }
+}
+#start::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: #00aaff;
+    opacity: 0.8;
+   
+   
+}
+#navbar{
+ position: absolute;
+ top: -100px;
+ left: 0;
+ width: 100%;
+ opacity: 0;
+ transition: 0.8s;
+ z-index: 1;
+}
+@media (max-width:500px){
+    #start{
+        .btn{
+            display: block;
+            margin-top: 10px;
+        }
+    }
+    .offre{
+        display: none;
+    }
+    .card{
+        display: block;
+        width: 100%;
+    }
+}
+
+
